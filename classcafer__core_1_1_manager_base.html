@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cafer_core</b></li><li class="navelem"><a class="el" href="classcafer__core_1_1_manager_base.html">ManagerBase</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecafer__core.html">cafer_core</a></li><li class="navelem"><a class="el" href="classcafer__core_1_1_manager_base.html">ManagerBase</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -95,16 +96,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>class ManagerBase&lt;Msg, DataContainer, DerivedClass&gt; A data manager to handle ROS messages (like images, features or policies).  
+<p>Base class for manager component. A manager component handle ROS messages (like images, features or policies).  
  <a href="classcafer__core_1_1_manager_base.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="manager_8hpp_source.html">manager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a69052cfe86b09d13dada320dff3ec8c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a> { <b>ADD</b>
+<tr class="memitem:a69052cfe86b09d13dada320dff3ec8c3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a> { <a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3a6c165fe9edd7b850098782fed6f7a3b6">ADD</a>
  }</td></tr>
-<tr class="memdesc:a69052cfe86b09d13dada320dff3ec8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The io enum type of traitement to do with incoming data. <br/></td></tr>
+<tr class="memdesc:a69052cfe86b09d13dada320dff3ec8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The io enum type of traitement to do with incoming data.  <a href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">More...</a><br/></td></tr>
 <tr class="separator:a69052cfe86b09d13dada320dff3ec8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -112,19 +113,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32cf70156ae1995401ef5eeae0c7fe0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a32cf70156ae1995401ef5eeae0c7fe0f">ManagerBase</a> (std::string type, std::string name, std::string description=&quot;&quot;)</td></tr>
 <tr class="memdesc:a32cf70156ae1995401ef5eeae0c7fe0f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classcafer__core_1_1_manager.html">Manager</a> constructor.  <a href="#a32cf70156ae1995401ef5eeae0c7fe0f">More...</a><br/></td></tr>
 <tr class="separator:a32cf70156ae1995401ef5eeae0c7fe0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a6790140c9652d8933d0f6ddb32652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6a6790140c9652d8933d0f6ddb32652"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect_from_ros</b> ()</td></tr>
+<tr class="memitem:ac6a6790140c9652d8933d0f6ddb32652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ac6a6790140c9652d8933d0f6ddb32652">disconnect_from_ros</a> ()</td></tr>
 <tr class="separator:ac6a6790140c9652d8933d0f6ddb32652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac42ffc585e64744586fed0aa4cf3cab1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac42ffc585e64744586fed0aa4cf3cab1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_initialized</b> ()</td></tr>
+<tr class="memitem:ac42ffc585e64744586fed0aa4cf3cab1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ac42ffc585e64744586fed0aa4cf3cab1">is_initialized</a> ()</td></tr>
 <tr class="separator:ac42ffc585e64744586fed0aa4cf3cab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a61209a739c07da9fb865fcb15ceba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93a61209a739c07da9fb865fcb15ceba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a93a61209a739c07da9fb865fcb15ceba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a93a61209a739c07da9fb865fcb15ceba">update</a> ()</td></tr>
 <tr class="separator:a93a61209a739c07da9fb865fcb15ceba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76db79be0caf95f2a46de1fb8a13efa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a76db79be0caf95f2a46de1fb8a13efa1">add_cb</a> (const shared_ptr&lt; Msg &gt; &amp;msg)</td></tr>
+<tr class="memitem:a76db79be0caf95f2a46de1fb8a13efa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a76db79be0caf95f2a46de1fb8a13efa1">add_cb</a> (const <a class="el" href="namespacecafer__core.html#a88d506b630d4b20d02f86ba896bdbadc">shared_ptr</a>&lt; Msg &gt; &amp;msg)</td></tr>
 <tr class="memdesc:a76db79be0caf95f2a46de1fb8a13efa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback function used to process messages from the listened topic.  <a href="#a76db79be0caf95f2a46de1fb8a13efa1">More...</a><br/></td></tr>
 <tr class="separator:a76db79be0caf95f2a46de1fb8a13efa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250b1434f678c691bf06874d217dfb97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a250b1434f678c691bf06874d217dfb97">listen_to</a> (const std::string &amp;topic, <a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a> type_io=ADD)</td></tr>
+<tr class="memitem:a250b1434f678c691bf06874d217dfb97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a250b1434f678c691bf06874d217dfb97">listen_to</a> (const std::string &amp;topic, <a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a> type_io=<a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3a6c165fe9edd7b850098782fed6f7a3b6">ADD</a>)</td></tr>
 <tr class="memdesc:a250b1434f678c691bf06874d217dfb97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to a specific topic and listen to it.  <a href="#a250b1434f678c691bf06874d217dfb97">More...</a><br/></td></tr>
 <tr class="separator:a250b1434f678c691bf06874d217dfb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec6c692a2d60249e8845ee3b6b5333d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a3ec6c692a2d60249e8845ee3b6b5333d">data_size</a> ()</td></tr>
@@ -136,37 +134,54 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:abbb099c544eb3f4d0383eceb9cbf63c5"><td class="memItemLeft" align="right" valign="top">DataContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#abbb099c544eb3f4d0383eceb9cbf63c5">_data_set</a></td></tr>
 <tr class="memdesc:abbb099c544eb3f4d0383eceb9cbf63c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">AskTo Call a specific service.  <a href="#abbb099c544eb3f4d0383eceb9cbf63c5">More...</a><br/></td></tr>
 <tr class="separator:abbb099c544eb3f4d0383eceb9cbf63c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72c94737101437b047124d65b9cde30c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72c94737101437b047124d65b9cde30c"></a>
-long int&#160;</td><td class="memItemRight" valign="bottom"><b>_id</b></td></tr>
+<tr class="memitem:a72c94737101437b047124d65b9cde30c"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a72c94737101437b047124d65b9cde30c">_id</a></td></tr>
 <tr class="separator:a72c94737101437b047124d65b9cde30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113c64ad2c8f8f957735edd1c1ca5bc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a113c64ad2c8f8f957735edd1c1ca5bc6"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
+<tr class="memitem:a113c64ad2c8f8f957735edd1c1ca5bc6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a113c64ad2c8f8f957735edd1c1ca5bc6">_name</a></td></tr>
 <tr class="separator:a113c64ad2c8f8f957735edd1c1ca5bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632a53c8997e21181acfaf77b6954bcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a632a53c8997e21181acfaf77b6954bcc"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_description</b></td></tr>
+<tr class="memitem:a632a53c8997e21181acfaf77b6954bcc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a632a53c8997e21181acfaf77b6954bcc">_description</a></td></tr>
 <tr class="separator:a632a53c8997e21181acfaf77b6954bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6452d3b14f8273449b7db44df2a4f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc6452d3b14f8273449b7db44df2a4f7"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_type</b></td></tr>
+<tr class="memitem:afc6452d3b14f8273449b7db44df2a4f7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#afc6452d3b14f8273449b7db44df2a4f7">_type</a></td></tr>
 <tr class="separator:afc6452d3b14f8273449b7db44df2a4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21b251177223be969cbdcec5eec1bb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad21b251177223be969cbdcec5eec1bb0"></a>
-std::unique_ptr&lt; ros::Publisher &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_publisher</b></td></tr>
+<tr class="memitem:ad21b251177223be969cbdcec5eec1bb0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ros::Publisher &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ad21b251177223be969cbdcec5eec1bb0">_publisher</a></td></tr>
 <tr class="separator:ad21b251177223be969cbdcec5eec1bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac314e18c7d43c5b8440d77ec4cb812"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac314e18c7d43c5b8440d77ec4cb812"></a>
-std::unique_ptr&lt; ros::Subscriber &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_subcriber</b></td></tr>
+<tr class="memitem:a0ac314e18c7d43c5b8440d77ec4cb812"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ros::Subscriber &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a0ac314e18c7d43c5b8440d77ec4cb812">_subcriber</a></td></tr>
 <tr class="separator:a0ac314e18c7d43c5b8440d77ec4cb812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99d9ce817857422563231f219fdc252"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae99d9ce817857422563231f219fdc252"></a>
-std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>_gen</b></td></tr>
+<tr class="memitem:ae99d9ce817857422563231f219fdc252"><td class="memItemLeft" align="right" valign="top">std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ae99d9ce817857422563231f219fdc252">_gen</a></td></tr>
 <tr class="separator:ae99d9ce817857422563231f219fdc252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6841c1c5792a00e3f73869b2a9500775"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6841c1c5792a00e3f73869b2a9500775"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>_container_mutex</b></td></tr>
+<tr class="memitem:a6841c1c5792a00e3f73869b2a9500775"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a6841c1c5792a00e3f73869b2a9500775">_container_mutex</a></td></tr>
 <tr class="separator:a6841c1c5792a00e3f73869b2a9500775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt;<br/>
 class cafer_core::ManagerBase&lt; Msg, DataContainer, DerivedClass &gt;</h3>
 
-<p>class ManagerBase&lt;Msg, DataContainer, DerivedClass&gt; A data manager to handle ROS messages (like images, features or policies). </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>Base class for manager component. A manager component handle ROS messages (like images, features or policies). </p>
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00061">61</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a69052cfe86b09d13dada320dff3ec8c3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">cafer_core::ManagerBase::io</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The io enum type of traitement to do with incoming data. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a69052cfe86b09d13dada320dff3ec8c3a6c165fe9edd7b850098782fed6f7a3b6"></a>ADD</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00067">67</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a32cf70156ae1995401ef5eeae0c7fe0f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -217,6 +232,8 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00077">77</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -232,7 +249,7 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
         <tr>
           <td class="memname">void <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::add_cb </td>
           <td>(</td>
-          <td class="paramtype">const shared_ptr&lt; Msg &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecafer__core.html#a88d506b630d4b20d02f86ba896bdbadc">shared_ptr</a>&lt; Msg &gt; &amp;&#160;</td>
           <td class="paramname"><em>msg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -251,6 +268,8 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00117">117</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -280,6 +299,63 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
 <p>Returns the number of elements in the data container. </p>
 <dl class="section return"><dt>Returns</dt><dd>The manager container's size. </dd></dl>
 
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00137">137</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6a6790140c9652d8933d0f6ddb32652"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::disconnect_from_ros </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00096">96</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac42ffc585e64744586fed0aa4cf3cab1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::is_initialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00103">103</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a250b1434f678c691bf06874d217dfb97"></a>
@@ -301,7 +377,7 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a>&#160;</td>
-          <td class="paramname"><em>type_io</em> = <code>ADD</code>&#160;</td>
+          <td class="paramname"><em>type_io</em> = <code><a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3a6c165fe9edd7b850098782fed6f7a3b6">ADD</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -324,9 +400,62 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00126">126</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93a61209a739c07da9fb865fcb15ceba"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00108">108</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6841c1c5792a00e3f73869b2a9500775"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_container_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00189">189</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abbb099c544eb3f4d0383eceb9cbf63c5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -355,6 +484,176 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00176">176</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a632a53c8997e21181acfaf77b6954bcc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_description</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00180">180</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae99d9ce817857422563231f219fdc252"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mt19937 <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_gen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00186">186</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72c94737101437b047124d65b9cde30c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long int <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00178">178</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a113c64ad2c8f8f957735edd1c1ca5bc6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00179">179</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad21b251177223be969cbdcec5eec1bb0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;ros::Publisher&gt; <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_publisher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00183">183</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ac314e18c7d43c5b8440d77ec4cb812"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;ros::Subscriber&gt; <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_subcriber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00184">184</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc6452d3b14f8273449b7db44df2a4f7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase</a>&lt; Msg, DataContainer, DerivedClass &gt;::_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00181">181</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -363,7 +662,7 @@ template&lt;typename Msg, typename DataContainer, typename DerivedClass&gt; </di
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 1 2016 15:46:01 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 1 2016 17:45:30 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

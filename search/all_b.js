@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rate',['rate',['../classcafer__core_1_1_component.html#a3081af05ab796cfa55733902c843a4c7',1,'cafer_core::Component']]],
-  ['remove',['remove',['../classcafer__core_1_1_manager_3_01_msg_00_01std_1_1unordered__map_3_01u__int32__t_00_01_msg_01_4_01_4.html#a62b4f9e721fd8bac55b616482ce76622',1,'cafer_core::Manager&lt; Msg, std::unordered_map&lt; u_int32_t, Msg &gt; &gt;']]]
+  ['operator_28_29',['operator()',['../structcafer__core_1_1_client_descriptor_hasher.html#a21c67dd0d64da8f626b92129d141a261',1,'cafer_core::ClientDescriptorHasher']]],
+  ['operator_3d_3d',['operator==',['../namespacecafer__core.html#ad357c2fea272fecf750e30cab5cb620c',1,'cafer_core']]]
 ];

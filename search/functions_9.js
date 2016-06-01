@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['management_5fcb',['management_cb',['../classcafer__core_1_1_component.html#a58033c928878824b6f1ecf3d4800f808',1,'cafer_core::Component']]],
-  ['managerbase',['ManagerBase',['../classcafer__core_1_1_manager_base.html#a32cf70156ae1995401ef5eeae0c7fe0f',1,'cafer_core::ManagerBase']]]
+  ['operator_28_29',['operator()',['../structcafer__core_1_1_client_descriptor_hasher.html#a21c67dd0d64da8f626b92129d141a261',1,'cafer_core::ClientDescriptorHasher']]],
+  ['operator_3d_3d',['operator==',['../namespacecafer__core.html#ad357c2fea272fecf750e30cab5cb620c',1,'cafer_core']]]
 ];

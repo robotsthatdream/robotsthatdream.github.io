@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>cafer_core</b></li><li class="navelem"><a class="el" href="classcafer__core_1_1_manager.html">Manager</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacecafer__core.html">cafer_core</a></li><li class="navelem"><a class="el" href="classcafer__core_1_1_manager.html">Manager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,31 +93,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase&lt; Msg, DataContainer, Manager&lt; Msg, DataContainer &gt; &gt;</a>.</p>
+<p><code>#include &lt;<a class="el" href="manager_8hpp_source.html">manager.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for cafer_core::Manager&lt; Msg, DataContainer &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcafer__core_1_1_manager.png" usemap="#cafer_core::Manager&lt; Msg, DataContainer &gt;_map" alt=""/>
+  <map id="cafer_core::Manager&lt; Msg, DataContainer &gt;_map" name="cafer_core::Manager&lt; Msg, DataContainer &gt;_map">
+<area href="classcafer__core_1_1_manager_base.html" alt="cafer_core::ManagerBase&lt; Msg, DataContainer, Manager&lt; Msg, DataContainer &gt; &gt;" shape="rect" coords="0,0,496,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classcafer__core_1_1_manager_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classcafer__core_1_1_manager_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase&lt; Msg, DataContainer, Manager&lt; Msg, DataContainer &gt; &gt;</a></td></tr>
 <tr class="memitem:a69052cfe86b09d13dada320dff3ec8c3 inherit pub_types_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a> </td></tr>
-<tr class="memdesc:a69052cfe86b09d13dada320dff3ec8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The io enum type of traitement to do with incoming data. <br/></td></tr>
+<tr class="memdesc:a69052cfe86b09d13dada320dff3ec8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The io enum type of traitement to do with incoming data.  <a href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">More...</a><br/></td></tr>
 <tr class="separator:a69052cfe86b09d13dada320dff3ec8c3 inherit pub_types_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcafer__core_1_1_manager_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcafer__core_1_1_manager_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase&lt; Msg, DataContainer, Manager&lt; Msg, DataContainer &gt; &gt;</a></td></tr>
 <tr class="memitem:a32cf70156ae1995401ef5eeae0c7fe0f inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a32cf70156ae1995401ef5eeae0c7fe0f">ManagerBase</a> (std::string type, std::string name, std::string description=&quot;&quot;)</td></tr>
 <tr class="memdesc:a32cf70156ae1995401ef5eeae0c7fe0f inherit pub_methods_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager constructor.  <a href="#a32cf70156ae1995401ef5eeae0c7fe0f">More...</a><br/></td></tr>
 <tr class="separator:a32cf70156ae1995401ef5eeae0c7fe0f inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a6790140c9652d8933d0f6ddb32652 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6a6790140c9652d8933d0f6ddb32652"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect_from_ros</b> ()</td></tr>
+<tr class="memitem:ac6a6790140c9652d8933d0f6ddb32652 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ac6a6790140c9652d8933d0f6ddb32652">disconnect_from_ros</a> ()</td></tr>
 <tr class="separator:ac6a6790140c9652d8933d0f6ddb32652 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac42ffc585e64744586fed0aa4cf3cab1 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac42ffc585e64744586fed0aa4cf3cab1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_initialized</b> ()</td></tr>
+<tr class="memitem:ac42ffc585e64744586fed0aa4cf3cab1 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ac42ffc585e64744586fed0aa4cf3cab1">is_initialized</a> ()</td></tr>
 <tr class="separator:ac42ffc585e64744586fed0aa4cf3cab1 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a61209a739c07da9fb865fcb15ceba inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93a61209a739c07da9fb865fcb15ceba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memitem:a93a61209a739c07da9fb865fcb15ceba inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a93a61209a739c07da9fb865fcb15ceba">update</a> ()</td></tr>
 <tr class="separator:a93a61209a739c07da9fb865fcb15ceba inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76db79be0caf95f2a46de1fb8a13efa1 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a76db79be0caf95f2a46de1fb8a13efa1">add_cb</a> (const shared_ptr&lt; Msg &gt; &amp;msg)</td></tr>
+<tr class="memitem:a76db79be0caf95f2a46de1fb8a13efa1 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a76db79be0caf95f2a46de1fb8a13efa1">add_cb</a> (const <a class="el" href="namespacecafer__core.html#a88d506b630d4b20d02f86ba896bdbadc">shared_ptr</a>&lt; Msg &gt; &amp;msg)</td></tr>
 <tr class="memdesc:a76db79be0caf95f2a46de1fb8a13efa1 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback function used to process messages from the listened topic.  <a href="#a76db79be0caf95f2a46de1fb8a13efa1">More...</a><br/></td></tr>
 <tr class="separator:a76db79be0caf95f2a46de1fb8a13efa1 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250b1434f678c691bf06874d217dfb97 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a250b1434f678c691bf06874d217dfb97">listen_to</a> (const std::string &amp;topic, <a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a> type_io=ADD)</td></tr>
+<tr class="memitem:a250b1434f678c691bf06874d217dfb97 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a250b1434f678c691bf06874d217dfb97">listen_to</a> (const std::string &amp;topic, <a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3">io</a> type_io=<a class="el" href="classcafer__core_1_1_manager_base.html#a69052cfe86b09d13dada320dff3ec8c3a6c165fe9edd7b850098782fed6f7a3b6">ADD</a>)</td></tr>
 <tr class="memdesc:a250b1434f678c691bf06874d217dfb97 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to a specific topic and listen to it.  <a href="#a250b1434f678c691bf06874d217dfb97">More...</a><br/></td></tr>
 <tr class="separator:a250b1434f678c691bf06874d217dfb97 inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec6c692a2d60249e8845ee3b6b5333d inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a3ec6c692a2d60249e8845ee3b6b5333d">data_size</a> ()</td></tr>
@@ -126,38 +133,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></t
 <tr class="memitem:abbb099c544eb3f4d0383eceb9cbf63c5 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">DataContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#abbb099c544eb3f4d0383eceb9cbf63c5">_data_set</a></td></tr>
 <tr class="memdesc:abbb099c544eb3f4d0383eceb9cbf63c5 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">AskTo Call a specific service.  <a href="#abbb099c544eb3f4d0383eceb9cbf63c5">More...</a><br/></td></tr>
 <tr class="separator:abbb099c544eb3f4d0383eceb9cbf63c5 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72c94737101437b047124d65b9cde30c inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72c94737101437b047124d65b9cde30c"></a>
-long int&#160;</td><td class="memItemRight" valign="bottom"><b>_id</b></td></tr>
+<tr class="memitem:a72c94737101437b047124d65b9cde30c inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a72c94737101437b047124d65b9cde30c">_id</a></td></tr>
 <tr class="separator:a72c94737101437b047124d65b9cde30c inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113c64ad2c8f8f957735edd1c1ca5bc6 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a113c64ad2c8f8f957735edd1c1ca5bc6"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
+<tr class="memitem:a113c64ad2c8f8f957735edd1c1ca5bc6 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a113c64ad2c8f8f957735edd1c1ca5bc6">_name</a></td></tr>
 <tr class="separator:a113c64ad2c8f8f957735edd1c1ca5bc6 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632a53c8997e21181acfaf77b6954bcc inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a632a53c8997e21181acfaf77b6954bcc"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_description</b></td></tr>
+<tr class="memitem:a632a53c8997e21181acfaf77b6954bcc inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a632a53c8997e21181acfaf77b6954bcc">_description</a></td></tr>
 <tr class="separator:a632a53c8997e21181acfaf77b6954bcc inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6452d3b14f8273449b7db44df2a4f7 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc6452d3b14f8273449b7db44df2a4f7"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_type</b></td></tr>
+<tr class="memitem:afc6452d3b14f8273449b7db44df2a4f7 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#afc6452d3b14f8273449b7db44df2a4f7">_type</a></td></tr>
 <tr class="separator:afc6452d3b14f8273449b7db44df2a4f7 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21b251177223be969cbdcec5eec1bb0 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad21b251177223be969cbdcec5eec1bb0"></a>
-std::unique_ptr&lt; ros::Publisher &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_publisher</b></td></tr>
+<tr class="memitem:ad21b251177223be969cbdcec5eec1bb0 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ros::Publisher &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ad21b251177223be969cbdcec5eec1bb0">_publisher</a></td></tr>
 <tr class="separator:ad21b251177223be969cbdcec5eec1bb0 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac314e18c7d43c5b8440d77ec4cb812 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac314e18c7d43c5b8440d77ec4cb812"></a>
-std::unique_ptr&lt; ros::Subscriber &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_subcriber</b></td></tr>
+<tr class="memitem:a0ac314e18c7d43c5b8440d77ec4cb812 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ros::Subscriber &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a0ac314e18c7d43c5b8440d77ec4cb812">_subcriber</a></td></tr>
 <tr class="separator:a0ac314e18c7d43c5b8440d77ec4cb812 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99d9ce817857422563231f219fdc252 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae99d9ce817857422563231f219fdc252"></a>
-std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>_gen</b></td></tr>
+<tr class="memitem:ae99d9ce817857422563231f219fdc252 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ae99d9ce817857422563231f219fdc252">_gen</a></td></tr>
 <tr class="separator:ae99d9ce817857422563231f219fdc252 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6841c1c5792a00e3f73869b2a9500775 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6841c1c5792a00e3f73869b2a9500775"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>_container_mutex</b></td></tr>
+<tr class="memitem:a6841c1c5792a00e3f73869b2a9500775 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a6841c1c5792a00e3f73869b2a9500775">_container_mutex</a></td></tr>
 <tr class="separator:a6841c1c5792a00e3f73869b2a9500775 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename Msg, typename DataContainer&gt;<br/>
+class cafer_core::Manager&lt; Msg, DataContainer &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00197">197</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/lenilegoff/git/cafer/include/cafer_core/<a class="el" href="manager_8hpp_source.html">manager.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 1 2016 15:46:01 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 1 2016 17:45:30 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

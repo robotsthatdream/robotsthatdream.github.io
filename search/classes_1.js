@@ -6,6 +6,5 @@ var searchData=
   ['managerbase',['ManagerBase',['../classcafer__core_1_1_manager_base.html',1,'cafer_core']]],
   ['managerbase_3c_20msg_2c_20datacontainer_2c_20manager_3c_20msg_2c_20datacontainer_20_3e_20_3e',['ManagerBase&lt; Msg, DataContainer, Manager&lt; Msg, DataContainer &gt; &gt;',['../classcafer__core_1_1_manager_base.html',1,'cafer_core']]],
   ['managerbase_3c_20msg_2c_20std_3a_3adeque_3c_20msg_20_3e_2c_20manager_3c_20msg_2c_20std_3a_3adeque_3c_20msg_20_3e_20_3e_20_3e',['ManagerBase&lt; Msg, std::deque&lt; Msg &gt;, Manager&lt; Msg, std::deque&lt; Msg &gt; &gt; &gt;',['../classcafer__core_1_1_manager_base.html',1,'cafer_core']]],
-  ['managerbase_3c_20msg_2c_20std_3a_3aunordered_5fmap_3c_20u_5fint32_5ft_2c_20msg_20_3e_2c_20manager_3c_20msg_2c_20std_3a_3aunordered_5fmap_3c_20u_5fint32_5ft_2c_20msg_20_3e_20_3e_20_3e',['ManagerBase&lt; Msg, std::unordered_map&lt; u_int32_t, Msg &gt;, Manager&lt; Msg, std::unordered_map&lt; u_int32_t, Msg &gt; &gt; &gt;',['../classcafer__core_1_1_manager_base.html',1,'cafer_core']]],
-  ['myhashcompare',['MyHashCompare',['../structcafer__core_1_1_my_hash_compare.html',1,'cafer_core']]]
+  ['managerbase_3c_20msg_2c_20std_3a_3aunordered_5fmap_3c_20u_5fint32_5ft_2c_20msg_20_3e_2c_20manager_3c_20msg_2c_20std_3a_3aunordered_5fmap_3c_20u_5fint32_5ft_2c_20msg_20_3e_20_3e_20_3e',['ManagerBase&lt; Msg, std::unordered_map&lt; u_int32_t, Msg &gt;, Manager&lt; Msg, std::unordered_map&lt; u_int32_t, Msg &gt; &gt; &gt;',['../classcafer__core_1_1_manager_base.html',1,'cafer_core']]]
 ];
