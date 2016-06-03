@@ -185,7 +185,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="component_8hpp_source.html#l00102">102</a> of file <a class="el" href="component_8hpp_source.html">component.hpp</a>.</p>
+<p>Definition at line <a class="el" href="component_8hpp_source.html#l00100">100</a> of file <a class="el" href="component_8hpp_source.html">component.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +203,7 @@ template&lt;typename Msg &gt; </div>
 
 <p><a class="el" href="classcafer__core_1_1_manager.html">Manager</a> component which use std::unordered_map as container. </p>
 
-<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00307">307</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00308">308</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ template&lt;typename Msg &gt; </div>
 
 <p><a class="el" href="classcafer__core_1_1_manager.html">Manager</a> component which use std::queue as container. </p>
 
-<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00313">313</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00314">314</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
 
 </div>
 </div>
@@ -235,7 +235,7 @@ template&lt;typename Msg &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="component_8hpp_source.html#l00101">101</a> of file <a class="el" href="component_8hpp_source.html">component.hpp</a>.</p>
+<p>Definition at line <a class="el" href="component_8hpp_source.html#l00099">99</a> of file <a class="el" href="component_8hpp_source.html">component.hpp</a>.</p>
 
 </div>
 </div>
@@ -391,30 +391,28 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Definition of message types</p>
-<ul>
-<li>CHG_FREQ: changement of the ROS frequency</li>
-<li>LOCAL_CLIENT_DEATH: ask for the death of the component. It is local as a node may have several components and what is asked here is only the death of the component. It should be noted that it only sets a boolean attribute (terminate) to true. Its value has to be taken into accounf for anything to happen...</li>
-<li>COMPLETE_NODE_DEATH: ask for the whole node death (not just the component). It results in a ros:shutdown()</li>
-<li>WATCHDOG: watchdog message, to tell that the component is still alive</li>
-<li>ACK_CREATION: message to tell to a component that has required the creation of a node that the creation is complete. It also allows the creating component to get the id of the created component. </li>
-</ul>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af2e8ea1ef1a69a516483c0b5c3616e11af77f9734ecf3c66fdf5e50b09f95a6cb"></a>CHG_FREQ</em>&#160;</td><td class="fielddoc">
+<p>changement of the ROS frequency </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af2e8ea1ef1a69a516483c0b5c3616e11a31dbda1311aaca5cb173e93c4f696c63"></a>LOCAL_CLIENT_DEATH</em>&#160;</td><td class="fielddoc">
+<p>ask for the death of the component. It is local as a node may have several components and what is asked here is only the death of the component. It should be noted that it only sets a boolean attribute (terminate) to true. Its value has to be taken into accounf for anything to happen... </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af2e8ea1ef1a69a516483c0b5c3616e11acbcd5deab0cb39837d49753a369c6f11"></a>COMPLETE_NODE_DEATH</em>&#160;</td><td class="fielddoc">
+<p>ask for the whole node death (not just the component). It results in a ros:shutdown() </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af2e8ea1ef1a69a516483c0b5c3616e11a0a05b00b76fb828ae077b2114f9aa976"></a>WATCHDOG</em>&#160;</td><td class="fielddoc">
+<p>watchdog message, to tell that the component is still alive </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af2e8ea1ef1a69a516483c0b5c3616e11aea2f52bff898b529f010f9faf6e91c06"></a>ACK_CREATION</em>&#160;</td><td class="fielddoc">
+<p>message to tell to a component that has required the creation of a node that the creation is complete. It also allows the creating component to get the id of the created component. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="af2e8ea1ef1a69a516483c0b5c3616e11a011d9f42932e598dcd9858e89e39c03b"></a>ASK_NEW_ACK</em>&#160;</td><td class="fielddoc">
+<p>ask for acknowledgement to all nodes that are handled by this <a class="el" href="classcafer__core_1_1_component.html" title="Abstract class for the Cafer client Main functionnalities: ">Component</a> </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="component_8hpp_source.html#l00068">68</a> of file <a class="el" href="component_8hpp_source.html">component.hpp</a>.</p>
+<p>Definition at line <a class="el" href="component_8hpp_source.html#l00061">61</a> of file <a class="el" href="component_8hpp_source.html">component.hpp</a>.</p>
 
 </div>
 </div>
@@ -496,7 +494,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 1 2016 17:45:30 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 3 2016 15:23:55 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -131,7 +131,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3ec6c692a2d60249e8845ee3b6b5333d inherit pub_methods_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcafer__core_1_1_manager_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcafer__core_1_1_manager_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcafer__core_1_1_manager_base.html">cafer_core::ManagerBase&lt; Msg, DataContainer, Manager&lt; Msg, DataContainer &gt; &gt;</a></td></tr>
 <tr class="memitem:abbb099c544eb3f4d0383eceb9cbf63c5 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">DataContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#abbb099c544eb3f4d0383eceb9cbf63c5">_data_set</a></td></tr>
-<tr class="memdesc:abbb099c544eb3f4d0383eceb9cbf63c5 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">AskTo Call a specific service.  <a href="#abbb099c544eb3f4d0383eceb9cbf63c5">More...</a><br/></td></tr>
+<tr class="memdesc:abbb099c544eb3f4d0383eceb9cbf63c5 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">the data container. All messages are stored in this container.  <a href="#abbb099c544eb3f4d0383eceb9cbf63c5">More...</a><br/></td></tr>
 <tr class="separator:abbb099c544eb3f4d0383eceb9cbf63c5 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c94737101437b047124d65b9cde30c inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a72c94737101437b047124d65b9cde30c">_id</a></td></tr>
 <tr class="separator:a72c94737101437b047124d65b9cde30c inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,10 +144,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ad21b251177223be969cbdcec5eec1bb0 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ros::Publisher &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ad21b251177223be969cbdcec5eec1bb0">_publisher</a></td></tr>
 <tr class="separator:ad21b251177223be969cbdcec5eec1bb0 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac314e18c7d43c5b8440d77ec4cb812 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; ros::Subscriber &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a0ac314e18c7d43c5b8440d77ec4cb812">_subcriber</a></td></tr>
+<tr class="memdesc:a0ac314e18c7d43c5b8440d77ec4cb812 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscriber to retrieve data  <a href="#a0ac314e18c7d43c5b8440d77ec4cb812">More...</a><br/></td></tr>
 <tr class="separator:a0ac314e18c7d43c5b8440d77ec4cb812 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99d9ce817857422563231f219fdc252 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#ae99d9ce817857422563231f219fdc252">_gen</a></td></tr>
 <tr class="separator:ae99d9ce817857422563231f219fdc252 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6841c1c5792a00e3f73869b2a9500775 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcafer__core_1_1_manager_base.html#a6841c1c5792a00e3f73869b2a9500775">_container_mutex</a></td></tr>
+<tr class="memdesc:a6841c1c5792a00e3f73869b2a9500775 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex to protect the _data_set from concurrent access.  <a href="#a6841c1c5792a00e3f73869b2a9500775">More...</a><br/></td></tr>
 <tr class="separator:a6841c1c5792a00e3f73869b2a9500775 inherit pro_attribs_classcafer__core_1_1_manager_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -155,14 +157,14 @@ Additional Inherited Members</h2></td></tr>
 class cafer_core::Manager&lt; Msg, DataContainer &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00197">197</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
+<p>Definition at line <a class="el" href="manager_8hpp_source.html#l00196">196</a> of file <a class="el" href="manager_8hpp_source.html">manager.hpp</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/lenilegoff/git/cafer/include/cafer_core/<a class="el" href="manager_8hpp_source.html">manager.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 1 2016 17:45:30 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 3 2016 15:23:55 for Cafer_core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
